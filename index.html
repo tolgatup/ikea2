@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    
+    <!-- Hamburger Menu Icon -->
+    <div style="position: fixed; top: 20px; left: 20px; z-index: 1000;">
+      <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="menu-logo">
+              <div class="menu-buttons">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close btn-1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                </div>
+                  <a href="#" class="link-padding2">
+                    <img src="//cdn.ikea.com.tr/_assets/img/logo.svg" alt="IKEA" title="IKEA" width="90" height="36">
+                  </a>
+                </div>
+            <ul class="menu-nav-main">
+                <h3 class="mt-5 header"><a href="#" class="link-text link-text-bold text-dark">Ürünler</a></h3>
+                <h3 class="header"><a href="#" class="link-text link-text-bold text-dark">Odalar</a></h3>
+                  <div class="row menu-room-list">                   
+                      <a href="#" class="link-text link-padding">Mağazalarımız</a>
+                      <a href="#" class="link-text link-padding ">Hizmetler</a>
+                      <a href="#" class="link-text link-padding ">İyi Fikirler</a>
+                      <a href="#" class="link-text link-padding ">Evde Güvenlik</a>
+                      <a href="#" class="link-text link-padding ">Sipariş Takibi</a>
+                      <a href="#" class="link-text link-padding ">Bize Ulaşın</a>
+                      <a href="#" class="link-text link-padding ">Müşteri Memnuniyeti Anketi </a>
+                      <a href="#" class="link-text link-padding ">Sosyal Sorumluluk </a>
+                      <a href="#" class="link-text link-padding ">IKEA Aile Kart</a>
+                      <a href="#" class="link-text link-padding ">IKEA Kurumsal Satış</a>
+                      <a href="#" class="link-text link-padding ">İsveç Restoranı</a>
+                  </div>
+            </nav>
+        </nav>
+        </ul>
+      </div>
+    </div>
+
+    <!-- İlk NAVBAR-->
+    <div class="ctl00_ctrlHeader_ctrlNavTag top-links hidden-xs hidden-sm pb-8">
+      <nav class="links">
+        <a href="#" class="link-text">Size En Yakın IKEA</a>
+        <a href="#" class="link-text">Hizmetler</a>
+        <a href="#" class="link-text">IKEA Aile Kart</a>
+        <a href="#" class="link-text">IKEA Kurumsal Satış</a>
+        <a href="#" class="link-text">İsveç Restoranı</a>
+        <a href="#" class="link-text">Sipariş Takibi</a>
+        <a href="#" class="link-text">Bize Ulaşın</a>
+        <a href="#" class="link-text">Müşteri Memnuniyet Anketi</a>
+        <a href="#" class="link-text">Stok Sorgula</a>
+        <a href="#" class="link-text">İade/Değişim Talebi</a>
+        <span class="english-link"><a href="#" class="link-text">English</a></span>
+      </nav>
+      <div class="border-bottom p-2 border-opacity-10"></div>
+    </div>
+    
+
+    <!-- İkinciNAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-color">
+      <div class="container-fluid">
+        <div class="head-icon">
+          <img src="//cdn.ikea.com.tr/_assets/img/logo.svg" alt="IKEA" title="IKEA" width="90" height="36">
+        </div>
+        <form class="d-flex" role="search" >
+          <input class="form-control me-2" type="search" placeholder="Ürün Ara" aria-label="Search">
+        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 allign">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="/assets/img/2202250_account_avatar_human_man_profile_icon.png" alt="Profil Resmi" style="width: 20px; height: 20px;"> <!-- Resim -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active btn-login-text text-bold" aria-current="page" href="#">Hej! Giriş Yap veya Üye Ol!</a>
+            </li>
+            <li>
+              <a href="/uyelik/uye-girisi" class="icon-new-user"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="/assets/img/8530571_heart_icon.png" alt="Profil Resmi" style="width: 20px; height: 20px;"> <!-- Resim -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="/assets/img/3005775_basket_buy_empty_shop_icon.png" alt="Profil Resmi" style="width: 20px; height: 20px; "> <!-- Resim -->
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="ctl00_ctrlHeader_ctrlNavTag" class="top-links hidden-xs hidden-sm" >  
+  <nav class="links">
+      <a class="link-text-bold" href="#">Ürünler</a>
+      <a class="link-text-bold " href="#">Odalar</a>
+      <a class="link-text-bold " style="color:#fe0200;" href="#">İNDİRİM</a>
+      <a class="link-text-bold " style="color:#242424;" href="#">İyi Fikirler</a>
+      <a class="link-text-bold " style="color:#ff3f00;" href="#">YENİ</a>
+      <a class="link-text-bold " style="color:#52ad46;" href="#">Yaz Ürünleri</a>
+  </nav>
+  <div class="border-bottom border-opacity-10"> </div>
+</div>
+    <!--carousel section-->
+    <section class="section">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner width=50%" >
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="/assets/img/dajlien-koleksiyon-banner-tr.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="/assets/img/yaz-ikeada-tr.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="/assets/img/yeni-ne-var-nisan-tr.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!--section 2 -->
+    <section>
+      <div class="container-fluid cont-op">
+      </div>
+      <h3 class="header">Baharın gelişini kutlayın</h3>
+      <p class=" header2"> İçinizi ısıtacak sıcak havaların keyfini
+        çıkarmanın zamanı geldi! Sevdiklerinizle 
+        harika zaman geçirmeye artık dış mekanınızda
+        devam edebilirsiniz. Geniş bahçelerden küçük 
+        balkonlara kadar dış mekanınıza uyacak mobilyalar
+        seçerek oturma alanları oluşturabilir,
+        aksesuarlarla ise dış mekanınızı dekoratif hale getirebilirsiniz.
+      </p>
+    </section>
+
+    <section>
+      <div> 
+        <a href="#" class="btn btn-outline-black">Tüm balkon ve bahçe ürünlerini keşfedin</a> 
+      </div>
+    </section>
+
+    <section class="row section">
+      <div class="col-md-6 col-sl-12"> 
+        <div class="image-parent">
+          <a href="#">
+            <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/nammaro-masa-ve-sandalye.jpg" 
+            alt="IKEA-nammaro masa ve sandalye" 
+            class="img-responsive lazyloaded">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 "> 
+        <div class="image-parent"> 
+          <a href="/odalar/balkon-bahce">
+            <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/yaz-ikeada-tr.jpg" 
+            alt="IKEA-yaz ikeada tr" 
+            class="img-responsive lazyloaded">
+          </a>
+          <div class="image-parent"> 
+            <a href="/urun/djupon-kahverengi-65x78x113-cm-katlanabilir-masa-90539270">
+              <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/djupon-kahverengi-katlanabilir-masa.jpg" 
+              alt="IKEA-djupon kahverengi katlanabilir masa"
+              class="img-responsive lazyloaded">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3"> 
+        <div class="image-parent"> 
+          <a href="/urun/tarno-siyah-kahverengi-55x54x70-cm-katlanabilir-masa-70095429">
+            <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/tarno-masa-ve-sandalye.jpg" 
+            alt="IKEA-tarno masa ve sandalye"  
+            class="img-responsive lazyloaded">
+          </a>
+          <div class="image-parent"> 
+            <a href="/urun/ikea-365--cam-1-lt-karaf-90279719">
+              <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/ikea-365-karaf.jpg" 
+              alt="IKEA-ikea 365 karaf"
+              class="img-responsive lazyloaded">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="container-fluid cont-op2">
+      <h3 class="header">Dış mekanınızı yenilemenize yardımcı olacak kategoriler</h3>
+    </div>
+
+    
+<section class="cont-op3">
+    <div class="main-carousel link-padding pad2">
+      <div class="pad">
+        <div class="image-container">
+          <img width="260" height="320" src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/balkon-masalari.jpg">
+          <div class="overlay">
+            <button class="button">Balkon Masaları</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pad">
+        <div class="image-container">
+          <img width="260" height="320" src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/balkon-sandalyeleri.jpg">
+          <div class="overlay">
+            <button class="button">Balkon Sandalyeleri</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pad">
+        <div class="image-container">
+          <img width="260" height="320" src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/bahce-ve-balkon-yer-dosemeleri.jpg">
+          <div class="overlay">
+            <button class="button">Bahçe ve Balkon Yer Döşemeleri</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pad">
+        <div class="image-container">
+          <img width="260" height="320" src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/dis-mekan-aydinlatma.jpg">
+          <div class="overlay">
+            <button class="button">Dış Mekan Aydınlatma</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pad">
+        <div class="image-container">
+          <img width="260" height="320" src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/balkon-halilari.jpg">
+          <div class="overlay">
+            <button class="button">Balkon Halıları</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pad">
+        <div class="image-container">
+          <img width="260" height="320" src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/dis-mekan-kirlent-ve-kirlent-kiliflari.jpg">
+          <div class="overlay">
+            <button class="button">Dış Mekan Kırlent ve Kırlet Kılıfları</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pad">
+        <div class="image-container">
+          <img width="260" height="320" src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/ciceklik-saksi.jpg">
+          <div class="overlay">
+            <button class="button">Çiçeklik Saksı</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <div class="container-fluid cont-op22">
+        <h3 class="header">Sofranızı bahçenize taşıyın</h3>
+        <p class=" header2"> Bahçe masa ve sandalye setlerinizi yeniden ortaya çıkarmaya 
+          hazır mısınız? Yazın en keyifli anlarından biri de sevdiklerinizle 
+          birlikte açık havada yediğiniz yemeklerdir. Geniş bahçe masaları 
+          ve bahçe sandalyeleri ile zamanın nasıl akıp geçtiğini anlamayacaksınız.
+        </p>
+      </div>
+
+
+      <section>
+
+        <div class="container"> 
+          <div class="row section2">
+
+            <div class="col-md-6"> 
+              <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/nammaro-yaz-sofralari.jpg" 
+              alt="IKEA-nammaro masa ve sandalye" 
+              class="img-responsive lazyloaded" style="width: 100%; height: 100%; object-fit: cover;">
+            </a>
+            </div>
+            
+            <div class="col-md-6 container-btw"> 
+              <video src="https://vid-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/yaz-sofralari.mp4"
+              poster="//image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/nammaro-yaz-sofralari-kapak.jpg" controls style="width: 100%; height: 100%; object-fit: cover;">
+                <source src="https://vid-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-ocak/dajlien-serisi-1.mp4" alt="Video Preview" width="100%" height="auto">
+              </video>
+            </div>
+
+      </section>
+
+        <section>
+          <div class="container-fluid cont-op222">
+            <h3 class="header">DİLARA KOÇ serisi</h3>
+            <p class=" header2" > Eviniz için yeni ürünlerimizi keşfedin. 
+              Mobilya ve aksesuar ürünleri arasından seçim yapabileceğiniz 
+              yeni ürünlerimizle evinizi yenilemenin yanı sıra mobilyalarla
+               daha işlevsel bir hale getirebilirsiniz.
+            </p>
+          </div>
+        </section>
+
+    
+        <section class="row section">
+          <div class="col-md-6"> 
+            <div class="image-parent">
+              <a href="#">
+                <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/alskvard-hus-beyaz-bebek-karyolasi.jpg" 
+                alt="IKEA-nammaro masa ve sandalye" 
+                class="img-responsive lazyloaded">
+              </a>
+            </div>
+          </div>
+    
+          <div class="col-md-3"> 
+            <div class="image-parent"> 
+              <a href="/odalar/balkon-bahce">
+                <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-ocak/yeni.jpg" 
+                alt="IKEA-yaz ikeada tr" 
+                class="img-responsive lazyloaded">
+              </a>
+              <div class="image-parent"> 
+                <a href="/urun/djupon-kahverengi-65x78x113-cm-katlanabilir-masa-90539270">
+                  <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/vallkrassing-kirlent-kilifi.jpg" 
+                  alt="IKEA-djupon kahverengi katlanabilir masa"
+                  class="img-responsive lazyloaded">
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-3"> 
+            <div class="image-parent"> 
+              <a href="/urun/tarno-siyah-kahverengi-55x54x70-cm-katlanabilir-masa-70095429">
+                <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/fanggroda-bolmeli-kutu.jpg" 
+                alt="IKEA-tarno masa ve sandalye"  
+                class="img-responsive lazyloaded">
+              </a>
+              <div class="image-parent"> 
+                <a href="/urun/ikea-365--cam-1-lt-karaf-90279719">
+                  <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/herrakrai-tekli-koltuk.jpg" 
+                  alt="IKEA-ikea 365 karaf"
+                  class="img-responsive lazyloaded">
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <div class="container-fluid cont-op2">
+          <h3 class="header">Bahar temizliği için ihtiyacınız olan her şey burada!</h3>
+        </div>
+    
+        
+    <section class="cont-op3">
+        <div class="main-carousel link-padding pad2">
+          <div class="pad">
+            <div class="image-container">
+              <img width="260" height="320" src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-mart/temizlik-aksesuarlari.jpg">
+              <div class="overlay">
+                <button class="button">Temizlik Aksesuarları</button>
+              </div>
+            </div>
+          </div>
+    
+          <div class="pad">
+            <div class="image-container">
+              <img width="260" height="320" src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-mart/cop-kovalari.jpg">
+              <div class="overlay">
+                <button class="button">Çöp Kutuları</button>
+              </div>
+            </div>
+          </div>
+    
+          <div class="pad">
+            <div class="image-container">
+              <img width="260" height="320" src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-mart/kutular.jpg">
+              <div class="overlay">
+                <button class="button">Kutular</button>
+              </div>
+            </div>
+          </div>
+    
+          <div class="pad">
+            <div class="image-container">
+              <img width="260" height="320" src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-mart/montaj-ve-duzenleme-urunleri.jpg">
+              <div class="overlay">
+                <button class="button">Montaj ve Düzenleme Ürünleri</button>
+              </div>
+            </div>
+          </div>
+    
+          <div class="pad">
+            <div class="image-container">
+              <img width="260" height="320" src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-mart/hurclar.jpg">
+              <div class="overlay">
+                <button class="button">Hurçlar</button>
+              </div>
+            </div>
+          </div>
+    
+          <div class="pad">
+            <div class="image-container">
+              <img width="260" height="320" src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-mart/dolap-ve-cekmece-duzenleyicileri.jpg">
+              <div class="overlay">
+                <button class="button">Dolap ve Çekmece Düzenleyicileri</button>
+              </div>
+            </div>
+          </div>
+    
+          <div class="pad">
+            <div class="image-container">
+              <img width="260" height="320" src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-mart/sepetler.jpg">
+              <div class="overlay">
+                <button class="button">Sepetler</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container-fluid cont-op2">
+          <h3 class="header">Evinizi yeniden tasarlayın</h3>
+          <p class="header2">
+            İster küçük ister geniş bir eve sahip olun, 
+            evinizi hayal ettiğiniz hale getirebilirsiniz. 
+            Banyonuza havluluk ve bank ekleyerek havlularınız 
+            ve içerisine eşyalarınızı yerleştirdiğiniz sepetleri 
+            koyabilirsiniz veya açık raf üniteleri ile makyaj
+            malzemelerinizi depolayabilirsiniz. Antrenizi yenilemek 
+            için dolaplar ve dekorasyon ürünlerinden yardım alabilirsiniz.
+            Yatak odanız için yeni nevresim takımları ve kıyafetleriniz 
+            için ayaklı askılık seçerek alanınızı güzelleştirebilirsiniz.
+            Hatta bir orta sehpa ile oturma odanıza yeni bir hava katabilirsiniz.
+          </p>
+        </div>
+        <div class="cont-op2222"> 
+          <a href="#" class="btn btn-outline-black">Evin her alanında düzenleme çözümleri</a> 
+        </div>
+      </section>
+  
+      <section class="row section3">
+        <div class="col-md-6"> 
+          <div class="image-parent">
+            <a href="#">
+              <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/hemnes-banyo-dolaplari.jpg" 
+              alt="IKEA-nammaro masa ve sandalye" 
+              class="img-responsive lazyloaded">
+            </a>
+          </div>
+        </div>
+  
+        <div class="col-md-3"> 
+          <div class="image-parent"> 
+            <a href="/odalar/balkon-bahce">
+              <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/brunkrissla-tek-kisilik-nevresim-seti.jpg" 
+              alt="IKEA-yaz ikeada tr" 
+              class="img-responsive lazyloaded">
+            </a>
+            <div class="image-parent"> 
+              <a href="/urun/djupon-kahverengi-65x78x113-cm-katlanabilir-masa-90539270">
+                <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/skruvby-kapakli-dolap.jpg" 
+                alt="IKEA-djupon kahverengi katlanabilir masa"
+                class="img-responsive lazyloaded">
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3"> 
+          <div class="image-parent"> 
+            <a href="/urun/tarno-siyah-kahverengi-55x54x70-cm-katlanabilir-masa-70095429">
+              <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/hemnes-orta-sehpa.jpg" 
+              alt="IKEA-tarno masa ve sandalye"  
+              class="img-responsive lazyloaded">
+            </a>
+            <div class="image-parent"> 
+              <a href="/urun/ikea-365--cam-1-lt-karaf-90279719">
+                <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/skubb-b%C3%B6lmeli-duzenleyici.jpg" 
+                alt="IKEA-ikea 365 karaf"
+                class="img-responsive lazyloaded">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container"> 
+          <div class="row section2">
+            <div class="col-md-6 p-0"> 
+              <video src="https://vid-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-ocak/dajlien-serisi-1.mp4"
+               poster="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-ocak/dajlien-serisi.jpg" controls style="width: 100%; height: 100%; object-fit: cover;">
+                <source src="https://vid-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-ocak/dajlien-serisi-1.mp4" alt="Video Preview" width="100%" height="auto">
+              </video>
+            </div>
+          
+            <div class="col-md-6 p-0" style="background-color: #027253;">
+              <div class="container-fluid cont-op4">
+                <h3 class="cont-op5">Antrenman her şey değildir...</br></br>
+                </h3>
+                <p class="cont-op4">Ama her şey antrenman olabilir. Çünkü antrenman nedir? Hız ve dayanıklılık mı,
+                    100 tekrar mı, acı yoksa kazanç da yok mu, yoksa karın kasları ve çelik gibi
+                    bacaklar mı? Yoksa çocuklarınızla oyun zamanı mı? Uzun bir iş gününden sonra
+                    yoga mı? Masanızda zıplama hareketleri mi? Evinizi toplamak, market alışverişi
+                    yapmak, köpeğinizi gezdirmek olabilir mi?</br></br>
+                    DAJLIEN, kullanımı kolay ve eve sorunsuz bir şekilde uyacak şekilde tasarlanmış
+                    akıllı, çok işlevli antrenman ekipmanlarından oluşan yeni ve sınırlı bir koleksiyondur.
+                    DAJLIEN, günlük yaşamınızda antrenmana ilham vermeyi amaçlamaktadır.
+              </p>
+            </div>
+            <div class="pad">
+              <div class="image-container">
+                <div class="overlay2">
+                  <button class="button2">Tüm DAJLIEN Koleksiyonunu inceleyin</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+   
+      <section>
+        <div class="container-fluid ">
+        <h3 class="header cont-op6">Rengarenk koleksiyonlarımız ile tanışmanızın zamanı geldi!</h3>
+          <a href="#" class="btn btn-outline-black cont-op7">Tüm koleksiyonlar için tıklayın</a> 
+        </div>
+      </section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript">
+     $('.main-carousel').flickity({
+      // options
+      cellAlign: "left",
+      wrapAround: true,
+      freescroll: true
+    });
+  </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<header lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/ikea/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  </head>
+
+ 
+
+
+</header>
+<!~~ İlk NAVBAR~~>
+<div class="ctl00_ctrlHeader_ctrlNavTag" class="top-links hidden-xs hidden-sm pb-8" >  
+    <nav class="links" >
+        <a href="/magazalar" class="link-text">Size En Yakın IKEA</a>
+        <a href="/hizmetler" class="link-text">Hizmetler</a>
+        <a href="/ailekart/" class="link-text">IKEA Aile Kart</a>
+        <a href="/ikeakurumsal/" class="link-text">IKEA Kurumsal Satış</a>
+        <a href="/ikea-restorani" class="link-text">İsveç Restoranı</a>
+        <a href="/internet-magazasi/siparis-takibi" class="link-text">Sipariş Takibi</a>
+        <a href="/musteri-hizmetleri/bize-ulasin" class="link-text">Bize Ulaşın</a>
+        <a href="/musteri-hizmetleri/anket" class="link-text">Müşteri Memnuniyet Anketi</a>
+        <a href="/musteri-hizmetleri/stok-sorgula" class="link-text">Stok Sorgula</a>
+        <a href="/internet-magazasi/siparis-degisim-iade" class="link-text">İade/Değişim Talebi</a> 
+    </nav>
+    <div class="border-bottom p-2 border-opacity-10"> </div>
+</div>
+
+<!~~ İkinciNAVBAR~~>
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-color">
+    <div class="container-fluid">
+        <div class="head-icon">
+        <img src="//cdn.ikea.com.tr/_assets/img/logo.svg" alt="IKEA" title="IKEA" width="90" height="36">
+        </div>
+      <form class="d-flex" role="search" >
+        <input class="form-control me-2" type="search" placeholder="Ürün Ara" aria-label="Search">
+      </form>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 allign">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="/ikea/assets/img/2202250_account_avatar_human_man_profile_icon.png" alt="Profil Resmi" style="width: 20px; height: 20px;"> <!~~ Resim ~~>
+            </a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link active btn-login-text text-bold" aria-current="page" href="#">Hej! Giriş Yap veya Üye Ol!</a>
+          </li>
+          <li <a  href="/uyelik/uye-girisi" class="icon-new-user"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="/ikea/assets/img/8530571_heart_icon.png" alt="Profil Resmi" style="width: 20px; height: 20px;"> <!~~ Resim ~~>
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+              <img src="/ikea/assets/img/3005775_basket_buy_empty_shop_icon.png" alt="Profil Resmi" style="width: 20px; height: 20px; "> <!~~ Resim ~~>
+          </a>
+      </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+    
+<!~~</nav>
+<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+  <div class="bg-white p-4">
+    <h5 class="text-body-emphasis h4">Collapsed content</h5>
+    <span class="text-body-secondary">Toggleable via the navbar brand.</span>
+  </div>
+</div>
+<nav class="navbar navbar-dark bg-white">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>~~>
+
+
+<div class="ctl00_ctrlHeader_ctrlNavTag" class="top-links hidden-xs hidden-sm" >  
+  <nav class="links">
+      <a class="link-text-bold" href="#">Ürünler</a>
+      <a class="link-text-bold " href="#">Odalar</a>
+      <a class="link-text-bold " style="color:#fe0200;" href="#">İNDİRİM</a>
+      <a class="link-text-bold " style="color:#242424;" href="#">İyi Fikirler</a>
+      <a class="link-text-bold " style="color:#ff3f00;" href="#">YENİ</a>
+      <a class="link-text-bold " style="color:#52ad46;" href="#">Yaz Ürünleri</a>
+  </nav>
+  <div class="border-bottom border-opacity-10"> </div>
+</div>
+
+<!~~carousel section~~>
+<section class="section">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel ">
+        <div class="carousel-inner width=50%" >
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="/ikea/assets/img/dajlien-koleksiyon-banner-tr.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="/ikea/assets/img/yaz-ikeada-tr.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="/ikea/assets/img/yeni-ne-var-nisan-tr.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</section>
+
+<!~~section 2 ~~>
+<section>
+<div class="container-fluid cont-op">
+</div>
+<h3>Baharın gelişini kutlayın</h3>
+<p> İçinizi ısıtacak sıcak havaların keyfini
+    çıkarmanın zamanı geldi! Sevdiklerinizle 
+    harika zaman geçirmeye artık dış mekanınızda
+    devam edebilirsiniz. Geniş bahçelerden küçük 
+    balkonlara kadar dış mekanınıza uyacak mobilyalar
+    seçerek oturma alanları oluşturabilir,
+    aksesuarlarla ise dış mekanınızı dekoratif hale getirebilirsiniz.
+</p>
+</section>
+
+<section>
+<div> 
+  <a href="#" class="btn btn-outline-black">Tüm balkon ve bahçe ürünlerini keşfedin</a> 
+</div>
+</section>
+
+<section class="row section -mt-7">
+
+
+<div class="col-md-6" > 
+    <div class="image-parent">
+      <a href="#">
+        <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/nammaro-masa-ve-sandalye.jpg" 
+        alt="IKEA-nammaro masa ve sandalye" 
+        class="img-responsive lazyloaded">
+      </a>
+    </div>
+</div>
+ 
+
+<div class="col-md-3"> 
+    <div class="image-parent"> 
+      <a href="/odalar/balkon-bahce">
+        <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/yaz-ikeada-tr.jpg" 
+        alt="IKEA-yaz ikeada tr" 
+        class="img-responsive lazyloaded">
+      </a>
+      <div class="image-parent"> 
+        <a href="/urun/djupon-kahverengi-65x78x113-cm-katlanabilir-masa-90539270">
+          <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/djupon-kahverengi-katlanabilir-masa.jpg" 
+          alt="IKEA-djupon kahverengi katlanabilir masa"
+          class="img-responsive lazyloaded">
+        </a>
+      </div>
+    </div>
+</div>
+
+
+<div class="col-md-3"> 
+  <div class="image-parent"> 
+    <a href="/urun/tarno-siyah-kahverengi-55x54x70-cm-katlanabilir-masa-70095429">
+      <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/tarno-masa-ve-sandalye.jpg" 
+      alt="IKEA-tarno masa ve sandalye"  
+      class="img-responsive lazyloaded">
+    </a>
+      <div class="image-parent"> 
+        <a href="/urun/ikea-365--cam-1-lt-karaf-90279719">
+          <img src="https://image-ikea.mncdn.com/ozgur-icerik/ana-sayfa/cy24-nisan/ikea-365-karaf.jpg" 
+          alt="IKEA-ikea 365 karaf"
+          class="img-responsive lazyloaded">
+        </a>
+      </div>
+  </div>
+</div>
+
+</section>
+
+<section class="section">
+  <div class="container-fluid">
+  </div>
+  <h1>Dış mekanınızı yenilemenize yardımcı olacak kategoriler</h1>
+  </section>
+
+
+
+
+</header>
+  <body>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
+-->

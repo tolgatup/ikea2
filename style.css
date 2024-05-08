@@ -1,0 +1,337 @@
+.header {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    margin: 0px 25px 0px 0;
+    font-weight: bold;
+}
+.header2 {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px 20px 100px;*/
+}
+.link-text {
+    font-weight:400 ;
+    padding: 10px 10px 0px 0px;
+    margin-top: 10px;
+    color: rgba(128, 128, 128);
+    text-decoration: none;
+}
+.link-text-bold {
+    font-weight:400 ;
+    padding: 10px 10px 0px 0px;
+    margin-top: 10px;
+    color: rgba(128, 128, 128);
+    font-weight: bold;
+    text-decoration: none;
+}
+.link-text-bold:hover {
+    border-width: 2px; /* Hover durumunda border kalınlığını artır */
+    text-decoration: underline; /* Hover durumunda alt çizgi ekler */
+}
+.link-text:hover {
+        border-width: 2px; /* Hover durumunda border kalınlığını artır */
+        text-decoration: underline; /* Hover durumunda alt çizgi ekler */
+}  
+.btn.btn-outline-black:hover {
+    border-width: 2px; /* Kalınlık ayarlayabilirsiniz */
+    transition: border-width 0.3s;
+}
+
+.btn-outline-black {
+    border: 1px solid #333 ;
+    border-radius: 64px;
+    padding: 0 20px 0 20px;
+    line-height: 50px;
+    font-weight: bold;
+    margin:0px 0 40px 100px;
+}
+
+.english-link {
+  float: right;
+  margin-right: 100px;
+}
+
+.head-links {
+    list-style: none;
+    padding-left: 90px;
+    padding-bottom: 0px;
+    margin: 10px 10px 0px 0px;
+    display: inline-block;
+}
+
+.link-interval{
+padding: 0px 10px 0px 10px;
+color: rgba(51, 51, 51, 0.288);
+}
+
+.first-link-interval{
+    margin-left: 0;
+}
+
+.link-border{
+    margin: 0;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.228);
+    width: 100%;
+}
+
+.ctl00_ctrlHeader_ctrlNavTag{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.head-icon{
+padding: 5px 30px 2px 90px;
+}
+
+.top-links {
+    position: relative;
+    height: 35px;
+}
+
+.form-control {
+    width:1215px; /* Örnek bir genişlik değeri */
+    border-radius: 20px; /* Piksel cinsinden yuvarlaklık miktarı */
+      }
+
+.section {
+        height: 100vh;
+        max-width: 100%;
+        padding: 100px;
+        margin-top: -30px;
+        margin-bottom: 100px;
+  }
+
+.section2{
+    margin-left: -175px;
+    margin-right: -175px;
+    margin-top: 150px;
+}
+
+.section3{
+  margin-right: -175px;
+  height: 100vh;
+  max-width: 100%;
+  padding: 100px;
+  margin-top: -100px;
+  margin-bottom: 100px;
+}
+
+.cont-op{
+    margin-top: -225px;
+}
+
+.cont-op2{
+    margin-top: 170px;
+    margin-bottom: 60px;
+}
+
+.cont-op22{
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.cont-op222{
+  margin-top: 100px;
+  margin-bottom: -100px;
+}
+
+.cont-op2222{
+  margin-top: -30px;
+}
+.cont-op3{
+    margin-top: -50px;
+}
+
+.cont-op4{
+  text-align: left;
+  margin-top: -30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  text-justify: auto;
+  font-weight: 400; /* İçeriğin bold olması için */
+}
+
+.cont-op5{
+  margin-top: 70px;
+  margin-left: 20px;
+  font-weight: 700; /* İçeriğin bold olması için */
+}
+
+.cont-op6{
+  margin-top: 70px;
+
+}
+
+.cont-op7{
+  margin-top: 20px;
+}
+/*Section 3*/
+
+.image-interval {
+    /*display: flex;*/
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    margin: 50px; /* İsteğe bağlı olarak boşluk ekleyebilirsiniz */
+}
+
+.image-parent img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+
+.search-container button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+.allign{
+    align-items: center;
+}
+
+.wrap {
+    overflow: hidden;
+    white-space: nowrap; /* Yatay kaydırma için wrap'ı engeller */
+  }
+  
+  .item {
+    display: inline-block; /* Elemanların yan yana gelmesini sağlar */
+    width: 100px; /* Örnek için sabit bir genişlik belirleyebilirsiniz */
+    height: 100px; /* Örnek için sabit bir yükseklik belirleyebilirsiniz */
+    background-color: #ccc; /* Örnek için arka plan rengi */
+    margin: 0 10px; /* Elemanlar arasında boşluk bırakır */
+    transition: transform 0.5s ease; /* Kayma animasyonu için geçiş efekti */
+  }
+  
+  .wrap:hover .item {
+    transform: translateX(50px); /* Fare hover olduğunda elemanları sağa kaydırır */
+  }
+
+  .img-container {
+    float: left;
+    width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+    padding: 5px; /* if you want space between the images */
+  }
+
+  .ml-auto {
+    margin-left: auto; /* Sağa yaslanmış olmasını sağlar */
+  }
+
+
+  .link-padding{
+    padding-left: 110px;
+    padding-top: 5px;
+  }
+
+  .link-padding2{
+    padding-left: 100px;
+  }
+
+  .offcanvas-header button.btn-close {
+    order: -1; /* Bu öğeyi diğerlerinden önce sıralar */
+    margin-right: -80px; /* Diğer öğelerin sağ tarafına hizalar */
+    float: none;
+}
+
+
+.menu-logo {
+    display: flex;
+    align-items: center; /* İçerikleri dikeyde hizalar */
+    margin-top: 25px;
+    padding-left: 0;
+}
+
+.menu-buttons {
+    display: flex; /* İçeriği yatayda hizala */
+    align-items: center; /* İçerikleri dikeyde hizala */
+}
+
+
+.pad{
+padding: 10px 10px 10px 10px;
+margin: 10px 10px 10px 10px;
+}
+
+.pad2{
+    padding-right: 130px;
+    padding-left: 95px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 35px; /* Butonun 35px yukarıda durması için */
+    left: 0;
+    width: 100%;
+    height: auto; /* Yüksekliği otomatik olarak ayarlanacak */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* İçeriği ortala */
+  }
+  
+  .button {
+    padding: 7.5px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600; /* İçeriğin bold olması için */
+    font-size: 14px; /* Font boyutunu sabitle */
+  }
+  
+  .button:hover {
+    background-color: rgba(223, 214, 214, 0.798);
+  }
+  
+
+  .video{
+    margin-top: 10px;
+
+  }
+
+  .color {
+    background-color: #027253;
+  }
+
+  .button2 {
+    padding: 15px 25px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 700; /* İçeriğin bold olması için */
+    font-size: 14px; /* Font boyutunu sabitle */
+  }
+  .overlay2 {
+    position: absolute;
+    left: 25px;
+    width: 100%;
+    height: auto; /* Yüksekliği otomatik olarak ayarlanacak */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-wrap: nowrap;
+  }
+
+  .container-btw{
+    padding-left: 10px;
+  }
